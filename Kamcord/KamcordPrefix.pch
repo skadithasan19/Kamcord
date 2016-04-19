@@ -1,0 +1,22 @@
+//
+//  KamcordPrefix.pch
+//  Kamcord
+//
+//  Created by Md Adit Hasan on 4/18/16.
+//  Copyright © 2016 Md Adit Hasan. All rights reserved.
+//
+
+#ifndef KamcordPrefix_pch
+#define KamcordPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import <QuartzCore/QuartzCore.h>
+#import "Constants.h"
+#import "Utilities.h"
+#import "iService.h"
+#import "AppDelegate.h"
+#import "GameInfo.h"
+#endif /* KamcordPrefix_pch */

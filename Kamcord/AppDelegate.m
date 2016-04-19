@@ -1,8 +1,5 @@
-//
-//  AppDelegate.m
-//  Kamcord
-//
-//  Created by Md Adit Hasan on 4/18/16.
+
+
 //  Copyright © 2016 Md Adit Hasan. All rights reserved.
 //
 
@@ -14,7 +11,11 @@
 
 @implementation AppDelegate
 
-
++ (AppDelegate*)shareDelegate {
+    
+    return (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;

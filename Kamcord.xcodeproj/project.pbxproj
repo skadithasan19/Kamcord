@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		0C5C8C091CC5C63F007A7565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C081CC5C63F007A7565 /* main.m */; };
 		0C5C8C0C1CC5C63F007A7565 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C0B1CC5C63F007A7565 /* AppDelegate.m */; };
-		0C5C8C0F1CC5C63F007A7565 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C0E1CC5C63F007A7565 /* ViewController.m */; };
-		0C5C8C121CC5C63F007A7565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C8C101CC5C63F007A7565 /* Main.storyboard */; };
 		0C5C8C151CC5C63F007A7565 /* Kamcord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C131CC5C63F007A7565 /* Kamcord.xcdatamodeld */; };
 		0C5C8C171CC5C63F007A7565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C8C161CC5C63F007A7565 /* Assets.xcassets */; };
-		0C5C8C1A1CC5C63F007A7565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C8C181CC5C63F007A7565 /* LaunchScreen.storyboard */; };
 		0C5C8C251CC5C63F007A7565 /* KamcordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C241CC5C63F007A7565 /* KamcordTests.m */; };
+		0C5C8C3A1CC5C67C007A7565 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C311CC5C67C007A7565 /* ViewController.m */; };
+		0C5C8C3D1CC5C67C007A7565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C8C351CC5C67C007A7565 /* LaunchScreen.storyboard */; };
+		0C5C8C3E1CC5C67C007A7565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C8C361CC5C67C007A7565 /* Main.storyboard */; };
+		0C5C8C3F1CC5C67C007A7565 /* collectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C391CC5C67C007A7565 /* collectionCell.m */; };
+		0C5C8C441CC5C8EC007A7565 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C431CC5C8EC007A7565 /* Utilities.m */; };
+		0C5C8C481CC5CB1A007A7565 /* iService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C471CC5CB1A007A7565 /* iService.m */; };
+		21D5E5C81CC6895500D1B53B /* GameInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D5E5C71CC6895500D1B53B /* GameInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,16 +36,26 @@
 		0C5C8C081CC5C63F007A7565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C5C8C0A1CC5C63F007A7565 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0C5C8C0B1CC5C63F007A7565 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0C5C8C0D1CC5C63F007A7565 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0C5C8C0E1CC5C63F007A7565 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0C5C8C111CC5C63F007A7565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C5C8C141CC5C63F007A7565 /* Kamcord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kamcord.xcdatamodel; sourceTree = "<group>"; };
 		0C5C8C161CC5C63F007A7565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0C5C8C191CC5C63F007A7565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C5C8C1B1CC5C63F007A7565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C5C8C201CC5C63F007A7565 /* KamcordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KamcordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5C8C241CC5C63F007A7565 /* KamcordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KamcordTests.m; sourceTree = "<group>"; };
 		0C5C8C261CC5C63F007A7565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C5C8C301CC5C67C007A7565 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C5C8C311CC5C67C007A7565 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C5C8C351CC5C67C007A7565 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C5C8C361CC5C67C007A7565 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0C5C8C381CC5C67C007A7565 /* collectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionCell.h; sourceTree = "<group>"; };
+		0C5C8C391CC5C67C007A7565 /* collectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionCell.m; sourceTree = "<group>"; };
+		0C5C8C411CC5C6A6007A7565 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		0C5C8C421CC5C8EC007A7565 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		0C5C8C431CC5C8EC007A7565 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		0C5C8C451CC5C9C6007A7565 /* KamcordPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KamcordPrefix.pch; sourceTree = "<group>"; };
+		0C5C8C461CC5CB1A007A7565 /* iService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iService.h; sourceTree = "<group>"; };
+		0C5C8C471CC5CB1A007A7565 /* iService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iService.m; sourceTree = "<group>"; };
+		21D5E5C61CC6895500D1B53B /* GameInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameInfo.h; sourceTree = "<group>"; };
+		21D5E5C71CC6895500D1B53B /* GameInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +97,12 @@
 		0C5C8C061CC5C63F007A7565 /* Kamcord */ = {
 			isa = PBXGroup;
 			children = (
+				0C5C8C401CC5C6A6007A7565 /* Model */,
+				0C5C8C341CC5C67C007A7565 /* View */,
+				0C5C8C371CC5C67C007A7565 /* ViewModel */,
+				0C5C8C2F1CC5C67C007A7565 /* Controller */,
 				0C5C8C0A1CC5C63F007A7565 /* AppDelegate.h */,
 				0C5C8C0B1CC5C63F007A7565 /* AppDelegate.m */,
-				0C5C8C0D1CC5C63F007A7565 /* ViewController.h */,
-				0C5C8C0E1CC5C63F007A7565 /* ViewController.m */,
-				0C5C8C101CC5C63F007A7565 /* Main.storyboard */,
-				0C5C8C161CC5C63F007A7565 /* Assets.xcassets */,
-				0C5C8C181CC5C63F007A7565 /* LaunchScreen.storyboard */,
-				0C5C8C1B1CC5C63F007A7565 /* Info.plist */,
-				0C5C8C131CC5C63F007A7565 /* Kamcord.xcdatamodeld */,
 				0C5C8C071CC5C63F007A7565 /* Supporting Files */,
 			);
 			path = Kamcord;
@@ -100,7 +111,11 @@
 		0C5C8C071CC5C63F007A7565 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0C5C8C161CC5C63F007A7565 /* Assets.xcassets */,
+				0C5C8C1B1CC5C63F007A7565 /* Info.plist */,
+				0C5C8C131CC5C63F007A7565 /* Kamcord.xcdatamodeld */,
 				0C5C8C081CC5C63F007A7565 /* main.m */,
+				0C5C8C451CC5C9C6007A7565 /* KamcordPrefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,6 +127,47 @@
 				0C5C8C261CC5C63F007A7565 /* Info.plist */,
 			);
 			path = KamcordTests;
+			sourceTree = "<group>";
+		};
+		0C5C8C2F1CC5C67C007A7565 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C5C8C301CC5C67C007A7565 /* ViewController.h */,
+				0C5C8C311CC5C67C007A7565 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C5C8C341CC5C67C007A7565 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C5C8C351CC5C67C007A7565 /* LaunchScreen.storyboard */,
+				0C5C8C361CC5C67C007A7565 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C5C8C371CC5C67C007A7565 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C5C8C381CC5C67C007A7565 /* collectionCell.h */,
+				0C5C8C391CC5C67C007A7565 /* collectionCell.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0C5C8C401CC5C6A6007A7565 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C5C8C461CC5CB1A007A7565 /* iService.h */,
+				0C5C8C471CC5CB1A007A7565 /* iService.m */,
+				0C5C8C411CC5C6A6007A7565 /* Constants.h */,
+				0C5C8C421CC5C8EC007A7565 /* Utilities.h */,
+				0C5C8C431CC5C8EC007A7565 /* Utilities.m */,
+				21D5E5C61CC6895500D1B53B /* GameInfo.h */,
+				21D5E5C71CC6895500D1B53B /* GameInfo.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C5C8C1A1CC5C63F007A7565 /* LaunchScreen.storyboard in Resources */,
+				0C5C8C3E1CC5C67C007A7565 /* Main.storyboard in Resources */,
 				0C5C8C171CC5C63F007A7565 /* Assets.xcassets in Resources */,
-				0C5C8C121CC5C63F007A7565 /* Main.storyboard in Resources */,
+				0C5C8C3D1CC5C67C007A7565 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,10 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C5C8C0F1CC5C63F007A7565 /* ViewController.m in Sources */,
+				0C5C8C441CC5C8EC007A7565 /* Utilities.m in Sources */,
 				0C5C8C151CC5C63F007A7565 /* Kamcord.xcdatamodeld in Sources */,
 				0C5C8C0C1CC5C63F007A7565 /* AppDelegate.m in Sources */,
+				21D5E5C81CC6895500D1B53B /* GameInfo.m in Sources */,
 				0C5C8C091CC5C63F007A7565 /* main.m in Sources */,
+				0C5C8C3A1CC5C67C007A7565 /* ViewController.m in Sources */,
+				0C5C8C481CC5CB1A007A7565 /* iService.m in Sources */,
+				0C5C8C3F1CC5C67C007A7565 /* collectionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,25 +298,6 @@
 			targetProxy = 0C5C8C211CC5C63F007A7565 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0C5C8C101CC5C63F007A7565 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C5C8C111CC5C63F007A7565 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0C5C8C181CC5C63F007A7565 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C5C8C191CC5C63F007A7565 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0C5C8C271CC5C63F007A7565 /* Debug */ = {
@@ -347,9 +388,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Kamcord/KamcordPrefix.pch;
 				INFOPLIST_FILE = Kamcord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Adit.Kamcord;
+				PRODUCT_BUNDLE_IDENTIFIER = Adit.KamcordA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -358,9 +400,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Kamcord/KamcordPrefix.pch;
 				INFOPLIST_FILE = Kamcord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Adit.Kamcord;
+				PRODUCT_BUNDLE_IDENTIFIER = Adit.KamcordA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -408,6 +451,7 @@
 				0C5C8C2B1CC5C63F007A7565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C5C8C2C1CC5C63F007A7565 /* Build configuration list for PBXNativeTarget "KamcordTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +460,7 @@
 				0C5C8C2E1CC5C63F007A7565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
