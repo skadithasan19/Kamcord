@@ -18,6 +18,7 @@
 		0C5C8C3F1CC5C67C007A7565 /* collectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C391CC5C67C007A7565 /* collectionCell.m */; };
 		0C5C8C441CC5C8EC007A7565 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C431CC5C8EC007A7565 /* Utilities.m */; };
 		0C5C8C481CC5CB1A007A7565 /* iService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8C471CC5CB1A007A7565 /* iService.m */; };
+		21972C8A1CC95ECB00AC3BD3 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21972C891CC95ECB00AC3BD3 /* GameManager.m */; };
 		21D5E5C81CC6895500D1B53B /* GameInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D5E5C71CC6895500D1B53B /* GameInfo.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		0C5C8C451CC5C9C6007A7565 /* KamcordPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KamcordPrefix.pch; sourceTree = "<group>"; };
 		0C5C8C461CC5CB1A007A7565 /* iService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iService.h; sourceTree = "<group>"; };
 		0C5C8C471CC5CB1A007A7565 /* iService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iService.m; sourceTree = "<group>"; };
+		21972C881CC95ECB00AC3BD3 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		21972C891CC95ECB00AC3BD3 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
 		21D5E5C61CC6895500D1B53B /* GameInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameInfo.h; sourceTree = "<group>"; };
 		21D5E5C71CC6895500D1B53B /* GameInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +169,8 @@
 				0C5C8C431CC5C8EC007A7565 /* Utilities.m */,
 				21D5E5C61CC6895500D1B53B /* GameInfo.h */,
 				21D5E5C71CC6895500D1B53B /* GameInfo.m */,
+				21972C881CC95ECB00AC3BD3 /* GameManager.h */,
+				21972C891CC95ECB00AC3BD3 /* GameManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				0C5C8C151CC5C63F007A7565 /* Kamcord.xcdatamodeld in Sources */,
 				0C5C8C0C1CC5C63F007A7565 /* AppDelegate.m in Sources */,
 				21D5E5C81CC6895500D1B53B /* GameInfo.m in Sources */,
+				21972C8A1CC95ECB00AC3BD3 /* GameManager.m in Sources */,
 				0C5C8C091CC5C63F007A7565 /* main.m in Sources */,
 				0C5C8C3A1CC5C67C007A7565 /* ViewController.m in Sources */,
 				0C5C8C481CC5CB1A007A7565 /* iService.m in Sources */,

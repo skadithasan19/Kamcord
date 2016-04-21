@@ -5,14 +5,11 @@
 //
 
 #import "ViewController.h"
-#import "collectionCell.h"
-#import "Constants.h"
+
 
 @interface ViewController ()
 @property (nonatomic, strong)NSMutableArray *contents;
 @end
-
-static NSString *pageNo = @"";
 
 @implementation ViewController
 
@@ -21,8 +18,6 @@ static NSString *pageNo = @"";
     [super viewDidLoad];
     self.contents = [NSMutableArray new];
 }
-
-
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
@@ -79,39 +74,6 @@ static NSString *pageNo = @"";
 
 
 
-- (void)loadData {
-    
-    [iService getJsonResponse:[Utilities getAPI:pageNo] success:^(NSDictionary *responseDict) {
-
-                NSArray *temp = [responseDict valueForKeyPath:@"response.card_models"];
-                NSInteger index;
-                NSRange myRange = NSMakeRange(self.contents.count, temp.count);
-        
-                [temp enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                    GameInfo *data = [[GameInfo alloc] initWithGameinfo:obj];
-                    [self.contents addObject:data];
-                }];
-
-                index = myRange.location;
-                NSMutableArray *indexes = [NSMutableArray array];
-                NSInteger i = 0;
-                while (i < myRange.length) {
-                    [indexes addObject:[NSIndexPath indexPathForItem:index inSection:0]]; index++;  i++;
-                }
-        
-                if (indexes.count > 0) {
-                    [self.collectionView performBatchUpdates:^{
-                    [self.collectionView insertItemsAtIndexPaths:indexes];
-                    } completion:nil];
-                }
-
-            pageNo = [responseDict valueForKeyPath:@"response.next_page"];
-        
-    } failure:^(NSError *error) {
-        
-        
-    }];
-}
 
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -121,15 +83,12 @@ static NSString *pageNo = @"";
     if (bottomEdge >= scrollView.contentSize.height)
     {
         // we are at the bottom
-        [self loadData];
+        [GameManager loadDataIn:self.collectionView withData:self.contents];
     }
   
 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end
