@@ -7,7 +7,10 @@
 #import "ViewController.h"
 
 
-@interface ViewController ()
+@interface ViewController (){
+    NSMutableDictionary *imagesDictionary;
+}
+
 @property (nonatomic, strong)NSMutableArray *contents;
 @end
 
@@ -35,9 +38,14 @@
     collectionCell *cell = (collectionCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     GameInfo *data = [self.contents objectAtIndex:indexPath.row];
     [cell createCellWithInfo:data];
-    [iService downloadImageWithURL:data completionBlock:^(BOOL succeeded, UIImage *image) {
+    if([imagesDictionary valueForKey:data.iconURL]) {
+        cell.photo.image = [imagesDictionary valueForKey:data.iconURL];
+    } else {
+        [iService downloadImageWithURL:data.iconURL completionBlock:^(BOOL succeeded, UIImage *image) {
             cell.photo.image = image;
+            [imagesDictionary setObject:image forKey:data.iconURL];
         }];
+    }
 
     return cell;
  

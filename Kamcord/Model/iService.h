@@ -16,6 +16,7 @@
  @param game is an Custom Object which has each game info.
  @return A block to execute when the app is ready to kick off the task as it assigned.
  */
-+ (void)downloadImageWithURL:(GameInfo *)game completionBlock:(void (^)(BOOL succeeded, UIImage *image))completionBlock;
++ (void)downloadImageWithURL:(NSString *)imageURL completionBlock:(void (^)(BOOL succeeded, UIImage *image))completionBlock;;
+
 
 @end

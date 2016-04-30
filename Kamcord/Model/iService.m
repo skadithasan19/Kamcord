@@ -48,49 +48,27 @@
  @return A block to execute when the app is ready to kick off the task as it assigned.
  */
 
-+ (void)downloadImageWithURL:(GameInfo *)game completionBlock:(void (^)(BOOL succeeded, UIImage *image))completionBlock
++ (void)downloadImageWithURL:(NSString *)imageURL completionBlock:(void (^)(BOOL succeeded, UIImage *image))completionBlock
 {
-
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", game.giD]];
     
-    NSURLSession * session = [NSURLSession sharedSession];
-    // Asynchronously
-    NSURLSessionDataTask * dataTask = [session dataTaskWithURL:[NSURL URLWithString:game.iconURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
+    NSURLSessionDataTask * dataTask = [[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:imageURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
                                        {
-                                        
-                            dispatch_queue_t queue = dispatch_queue_create("downLoadPhoto",
-                                                                                          DISPATCH_QUEUE_CONCURRENT);
-                                        dispatch_async(queue, ^(void){
-                                            [data writeToFile:filePath atomically:YES];
-                                        });
-                                        dispatch_async(dispatch_get_main_queue(), ^{
-
-                                          if ( !error )
-                                           {
-                                               UIImage *image = [[UIImage alloc] initWithData:data];
-                                               completionBlock(YES,image);
-                                              
-                                           } else{
-                                               completionBlock(NO,nil);
-                                           }
-                                        });
+                                           
+                                           dispatch_async(dispatch_get_main_queue(), ^{
+                                               
+                                               if ( !error )
+                                               {
+                                                   completionBlock(YES,[UIImage imageWithData:data]);
+                                                   
+                                               } else{
+                                                   completionBlock(NO,nil);
+                                               }
+                                           });
                                            
                                        }];
     
-
-    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
-            UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfFile:filePath]];
-            dispatch_async(dispatch_get_main_queue(), ^(void){
-                completionBlock(YES,image);
-            });
-        });
-    } else {
-        [dataTask resume] ; // Executed First
-    }
-    
- }
+    [dataTask resume] ; // Executed First
+}
 
 
 
